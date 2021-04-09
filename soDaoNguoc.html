@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="so">
+    <input type="button" id="batdau" value="click"> 
+    <script>
+
+        document.getElementById("batdau").addEventListener("click", function(){
+            let i = 1
+           a = document.getElementById("so").value
+           b = a.toString().length
+           console.log(b)
+           while(i <= b){
+            b1 = b1 % 10 
+            b2 = b2*10+b1
+            b3 = Math.floor(a/10)
+
+            document.write(b1 + b2 + b3)
+
+            i++
+           }
+           
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="button" value="Chơi" id="batDau">
+    </form>
+
+    <script>
+        let soLanDuDoan = 0
+        document.getElementById("batDau").addEventListener("click", function () {
+            let min = prompt("nhập min")
+            let max = prompt("nhập max")
+            let d
+            do {
+                let a = prompt("nhập vào số bạn dự đoán")
+                
+                if (a > d) {
+                    alert("số dự đoán của bạn lớn hơn kết quả")
+                }
+                else if (a < d) {
+                    alert("số dự đoán của bạn nhỏ hơn kết quả")
+                }
+                soLanDuDoan++
+            } 
+            while (soLanDuDoan < 3 || c != d)
+            alert("chúc mừng bạn đã dự đoán đúng")
+    })
+        
+    </script>
+</body>
+
+</html>

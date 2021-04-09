@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ve hinh chu nhat</title>
+</head>
+
+<body>
+    <script>
+        dai = prompt("nhập vào chiếu dài")
+        cao = prompt("nhập vào chiều cao")
+        kiTu = prompt("nhập vào ký tự bạn muốn dùng")
+        i = 1
+        let loi
+        while (i <= cao) {
+            document.write("<br>")
+            let y = 1
+            while (y <= dai) {
+                if (y == dai || y == 1 || i ==1 || i == cao){document.write(kiTu)}
+                else {document.write("x")}
+                y++
+            }
+            i++
+        }
+    </script>
+</body>
+
+</html>

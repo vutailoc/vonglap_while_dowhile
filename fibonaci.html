@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finaci</title>
+</head>
+
+<body>
+
+    <script>
+
+n = prompt("nhap vao do dai day fibonaci")
+
+        i = 1
+        let soHienTai = 1 
+        let soLienTruoc = 0
+        let soLienSau = 2
+
+        while(i <= n){
+
+            soLienSau = soLienTruoc + soHienTai
+            soLienTruoc = soHienTai
+            soHienTai = soLienSau
+
+            
+            document.write(`${soLienSau} <br>`)
+
+            i++
+        }
+        
+
+    </script>
+
+</body>
+
+</html>
